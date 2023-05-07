@@ -1,0 +1,7 @@
+hi_from_demo.from:
+  path: '/hi_form_demo/form'
+  defaults:
+    _controller: '\Drupal\hi_form_demo\Controller\HiFormDemoController::index'
+    _title: 'Hi Form Demo'
+  requirements:
+    _permission: 'access content'

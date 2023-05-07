@@ -1,0 +1,5 @@
+name: hi_form_demo
+type: module
+description: 'A module to demonstrate the use of the hi_form module.'
+core_version_requirement: ^8.8 || ^9
+package: Custom

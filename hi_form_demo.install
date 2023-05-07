@@ -1,0 +1,45 @@
+<?php
+
+function hi_form_demo_schema()
+{
+  // Create the table schema for our new entity.
+  $schema['hi_form_demo'] = [
+    'description' => 'The base table for hi_form_demo entities.',
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier for a hi_form_demo entity.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'description' => 'The name of the hi_form_demo entity.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'email' => [
+        'description' => 'The email of the hi_form_demo entity.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'phone' => [
+        'description' => 'The phone of the hi_form_demo entity.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'message' => [
+        'description' => 'The message of the hi_form_demo entity.',
+        'type' => 'text',
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}
